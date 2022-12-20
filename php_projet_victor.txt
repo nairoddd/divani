@@ -1,0 +1,6 @@
+sendgrid // free, send mail
+email api -> web api
+choose php
+genere un token //create key
+
+packagist // sendgrid avec composer pour install
