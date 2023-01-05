@@ -11,7 +11,7 @@ function userConnected()
 
     function userIsAdmin()
     {
-        if (userConnected() && $_SESSION['user']['status'] === '1')
+        if (userConnected() && $_SESSION['user']['status'] == '1')
         {
             return true; 
         } else {

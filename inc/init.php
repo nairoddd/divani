@@ -21,6 +21,7 @@ session_start();
 require_once 'function.php';
 
 define('URL', 'http://localhost/php/divani/');
+define('RACINE', $_SERVER['DOCUMENT_ROOT'].'/php/divani/');
 
 // define('RACINE',$_SERVER['DOCUMENT_ROOT'].'/php/projetboutique/');
 

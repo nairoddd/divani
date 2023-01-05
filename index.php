@@ -20,6 +20,9 @@ require_once 'inc/header.inc.php';
         <div>
             <hr>
         </div>
+        <div class="text_canape">
+            <p>LE CANAPÉ QUE VOUS VOULEZ, AU PRIX DONT VOUS AVEZ TOUJOURS RÊVÉ</p>
+        </div>
     </section>
     
 </main>

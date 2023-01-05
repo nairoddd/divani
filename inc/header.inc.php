@@ -29,7 +29,6 @@
             <ul class="login_registration">
             <?php if(userConnected()): ?>
                 <li><a href="<?= URL ?>connexion.php?action=deconnexion">Déconnexion</a><i class='bx bxs-log-out'></i></li>
-                <li><a href="<?= URL ?>inscription.php">Inscription</a></li>
             <?php else: ?>
                 <li><a href="<?= URL ?>connexion.php">Connexion</a><i class='bx bxs-log-in'></i></li>
                 <li><a href="<?= URL ?>inscription.php">Inscription</a></li>

@@ -1,9 +1,12 @@
 <!--PARTIE TRAITEMENT -->
-<?php require_once './inc/init.php';
+<?php 
+    require_once './inc/init.php';
+    require_once './inc/function.php';
+
 
 if(isset($_GET['action']) && $_GET['action'] == 'deconnexion'){
     session_destroy();
-    header('location:index.php');
+    header('location:connexion.php');
 }
 
 
@@ -40,10 +43,10 @@ if ($_POST) {
 
                 header('location:index.php');
             } else {
-                $content .= '<div style="color:yellow; text-align:center; margin: 20px;"  role="alert">Erreur sur le mot de passe</div>';
+                $content .= '<div style="color:red; text-align:center; margin: 20px;"  role="alert">Erreur sur le mot de passe</div>';
             }
         } else {
-            $content .= '<div style="color:yellow; text-align:center; margin: 20px;"  role="alert">Erreur sur le mail</div>';
+            $content .= '<div style="color:red; text-align:center; margin: 20px;"  role="alert">Erreur sur le mail</div>';
         }
     }
 }
@@ -91,14 +94,5 @@ if ($_POST) {
         </div>
     </form>
     
-
-  
-<style>
- 
-
-</style>
-
-
-
 
 <?php require_once('./inc/footer.inc.php'); ?>

@@ -40,6 +40,10 @@ h1{
     max-width: 100%;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
 }
 .header_content{
     display: flex;
@@ -61,6 +65,11 @@ h1{
     color: black;
     font-size: 14px;
     letter-spacing: var(--letter-spacing);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.login_registration li a:hover{
+    color: var(--primary-color);
 }
 i{
     display: flex;
@@ -82,10 +91,15 @@ nav ul{
 nav ul li{
     margin-left: 1rem;
 }
-nav ul li a{
+.navigation nav ul li a{
     color: black;
     font-size: 15px;
     letter-spacing: var(--letter-spacing);
+    transition: 0.3s;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: var(--primary-color);
 }
 
 /* ----------FOOTER------------- */
@@ -147,7 +161,7 @@ a:hover {
 
 /* --------END FOOTER----------- */
 
-/* FORMULAIRE VICTOR */
+/* -------FORMULAIRE VICTOR ----------------*/
 /* .page_title{
     text-align: center;
     padding-top: 3rem;
@@ -271,4 +285,121 @@ main{
     color: var(--primary-color);
     font-weight: 600;
 }
+.text_canape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.text_canape p{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 600;
+    width: 1200px;
+}
+
 /* END INDEX */
+
+/* -----------BOUTIQUE-------------------- */
+
+/* BOUTIQUE CATEGORY */
+.section{
+    padding: 4rem 6rem;
+}
+.category h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+/* Liste des catégories sur la page */
+.list_category{
+    margin-bottom: 3rem;
+    display: flex;
+}
+.list_category li{
+    margin-right: 1rem;
+}
+.list_category li a{
+    border: 1px solid var(--primary-color);
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.list_category li a:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+/* Partie toutes les catégories */
+.list_category li:nth-of-type(1) a{
+    background-color: var(--primary-color);
+    color: white;
+}
+.list_category li:nth-of-type(1) a:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+/* BOUTIQUE CARD */
+.articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,300px));
+    gap: 1rem;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    /* width: 30%; */
+}
+.card-title{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.card-btn{
+    margin-top: 1rem;
+}
+.card-btn a{
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.card-btn a:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.card-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ----------END BOUTIQUE--------------------- */
+
+/* --------------FICHE PRODUIT------------------ */
+
+.details_product{
+    display: flex;
+    justify-content: center;
+}
+.details_content{
+    border: 1px solid black;
+    padding: 4rem;
+    border-radius: 20px;
+    /* font-weight: normal; */
+    text-align: center;
+}
+/* --------------END FICHE PRODUIT-------------- */

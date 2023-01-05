@@ -108,7 +108,7 @@ $_POST['password'] = password_hash($_POST['password'],PASSWORD_DEFAULT);
         <label class="form-label" for="cgu">J'accepte les conditions d'utilisation (conformément aux arts. 13 et 14 du Règlement UE 2016/679)</label>
         <input type="checkbox" name="cgu" id="cgu" value="1"><br>
         <div class="bouton">
-            <button type="submit" class="form-submit">Se connecter</button>
+            <button type="submit" class="form-submit">S'inscrire</button>
         </div>
     </form>
    </div>
