@@ -45,7 +45,6 @@
                 <?php endif; ?>
                     <li><a href="<?= URL ?>index.php">Accueil</a></li>
                     <li><a href="<?= URL ?>boutique.php">Boutique</a></li>
-                    <li><a href="<?= URL ?>magasins.php">Nos magasins</a></li>
                     <li><a href="<?= URL ?>contact.php">Contact</a></li>
                 </ul>
             </nav>
